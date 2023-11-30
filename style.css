@@ -109,13 +109,13 @@ body {
 }
 .form__box:focus {
   border: 1px solid #e8721d;
-  background: #fff;
+  /* background: #fff;
   color: #333;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: normal; */
 }
 .form-date {
   width: 226px;

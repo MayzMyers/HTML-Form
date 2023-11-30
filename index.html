@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="banner">
+        <img
+          class="banner__img"
+          src="./img/dog.jpeg"
+          alt="Собака"
+          width="640"
+          height="800"
+        />
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+          >
+            <circle cx="35" cy="35" r="35" fill="white" />
+            <path
+              d="M27.6729 24.6709C30.4557 28.3844 30.7564 32.7814 28.3374 34.4994C25.9255 36.2172 21.7107 34.5952 18.9293 30.8822C16.1465 27.1687 15.8454 22.7708 18.2581 21.057C20.6721 19.346 24.8905 20.9584 27.6729 24.6709ZM14.0249 36.2767C12.4691 37.9799 13.5174 41.2477 16.3676 43.576C19.2177 45.9044 22.7852 46.4118 24.34 44.7069C25.8957 43.0037 24.8475 39.7359 21.9905 37.4109C19.1458 35.0788 15.5788 34.57 14.0249 36.2767ZM30.5864 23.2367C31.8331 27.7063 35.1334 30.6267 37.9644 29.7602C40.7967 28.8965 42.0875 24.5642 40.8422 20.095C39.5965 15.6249 36.2948 12.7041 33.4642 13.5714C30.6292 14.4443 29.3411 18.7675 30.5864 23.2367ZM44.1411 26.5056C44.2481 30.1843 46.199 33.0089 48.4971 32.8138C50.7902 32.6256 52.5691 29.4852 52.4563 25.8093C52.356 22.1272 50.4056 19.3036 48.1071 19.4978C45.8082 19.6888 44.0351 22.8264 44.1411 26.5056ZM33.1916 32.1588L33.1943 32.1642C33.2368 32.1432 33.271 32.1197 33.3136 32.0988L33.1916 32.1588ZM33.0329 32.2369C33.0697 32.2188 33.1149 32.2033 33.1575 32.1823L33.1548 32.1769L33.0329 32.2369ZM50.9668 36.6925C45.3672 32.9168 40.2135 28.789 33.1943 32.1642C33.1885 32.167 33.1821 32.1713 33.1705 32.177L33.1589 32.1827C26.2032 35.6871 26.3252 42.2908 25.9024 49.0311C25.4756 55.8124 30.5581 57.2135 33.4927 57.1732C36.4332 57.13 39.4372 55.2789 40.7851 53.5833C41.9463 52.1268 42.6895 51.9437 42.8734 51.9167L42.884 51.9382C42.884 51.9382 42.8872 51.93 42.8904 51.9217C42.9056 51.9209 42.9199 51.9206 42.9199 51.9206L42.9092 51.899C43.0428 51.7698 43.6402 51.2929 45.5037 51.2605C47.6685 51.2268 50.9676 49.975 52.7893 47.6739C54.6169 45.37 56.6057 40.4868 50.9668 36.6925Z"
+              fill="black"
+            />
+          </svg>
+          <div class="logo__text">
+            <h1 class="logo__h1">DogComfort</h1>
+            <p class="logo__desc">отель для собак</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-conteiner">
+        <form class="form" action="#">
+          <h1 class="form__h1">
+            Оставьте заявку, <br />и мы позаботимся о вашем питомце!
+          </h1>
+          <fieldset class="form__fieldset">
+            <ul class="form__grid">
+              <li class="form__block grid-span">
+                <label id="id" class="form__label">ID заявки</label>
+                <input
+                  type="text"
+                  name="id"
+                  class="form__box"
+                  placeholder="12-1234"
+                  disabled
+                />
+              </li>
+              <li class="form__block">
+                <label id="pet-name" class="form__label"
+                  >Имя <span class="red-ast">*</span></label
+                >
+                <input
+                  type="text"
+                  name="pet-name"
+                  class="form__box"
+                  placeholder="Как зовут питомца?"
+                />
+              </li>
+              <li class="form__block">
+                <label id="date-birth" class="form__label"
+                  >Дата рождения <span class="red-ast">*</span></label
+                >
+                <input
+                  type="date"
+                  name="date-birth"
+                  class="form__box form-date"
+                />
+              </li>
+              <li class="form__block">
+                <label id="gender" class="form__label"
+                  >Пол <span class="red-ast">*</span></label
+                >
+                <div class="form__box radio-flex">
+                  <label class="radiobox">
+                    <input type="radio" name="gender" />
+                    <span class="form__label radio-btn">Мальчик</span>
+                  </label>
+                  <label class="radiobox">
+                    <input type="radio" name="gender" checked />
+                    <span class="form__label radio-btn">Девочка</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form__block">
+                <label id="fertility" class="form__label"
+                  >Стерилизована / кастрирован
+                  <span class="red-ast">*</span></label
+                >
+                <div class="form__box radio-flex">
+                  <label class="radiobox">
+                    <input type="radio" name="fertility" />
+                    <span class="form__label radio-btn">Да</span>
+                  </label>
+                  <label class="radiobox">
+                    <input type="radio" name="fertility" checked />
+                    <span class="form__label radio-btn">Нет</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form__block grid-span">
+                <label id="info" class="form__label"
+                  >Дополнительная информация</label
+                >
+                <textarea
+                  name="info"
+                  class="form__box textarea"
+                  placeholder="Расскажите нам про особенности и питание"
+                  cols="20"
+                  rows="5"
+                ></textarea>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <h2 class="form__h2">Личная информация</h2>
+            <ul class="form__grid">
+              <li class="form__block">
+                <label id="name" class="form__label"
+                  >Ваше имя <span class="red-ast">*</span></label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  class="form__box"
+                  placeholder="Как вас зовут?"
+                />
+              </li>
+              <li class="form__block">
+                <label id="tel" class="form__label"
+                  >Телефон для связи <span class="red-ast">*</span></label
+                >
+                <input
+                  type="tel"
+                  name="tel"
+                  class="form__box"
+                  placeholder="+7 (___) ___-__-__"
+                />
+              </li>
+              <li class="form__block grid-span">
+                <label id="region" class="form__label"
+                  >Район города</label
+                >
+                <select name="region" class="form__box select-list">
+                  <option value="" disabled selected>Выберите район</option>
+                  <option value="Avtozavodskij">Автозаводский</option>
+                  <option value="Leninskij">Ленинский</option>
+                  <option value="Moskovskij">Московский</option>
+                  <option value="Nizhegorodskij">Нижегородский</option>
+                  <option value="Priokskij">Приокский</option>
+                  <option value="Sormovskij">Сормовский</option>
+                </select>
+              </li>
+              <li class="form__block grid-span">
+                <label class="form__checkbox">
+                  <input type="checkbox" />
+                  <span class="checkbox__text"
+                    >Согласен(-а) на обработку персональных данных</span
+                  >
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__button">
+            <button class="submit-btn" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

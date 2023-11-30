@@ -107,15 +107,8 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.form__box:focus {
+.form__box:active {
   border: 1px solid #e8721d;
-  /* background: #fff;
-  color: #333;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal; */
 }
 .form-date {
   width: 226px;
